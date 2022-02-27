@@ -4,7 +4,7 @@ let { sidebar } = getConfig({ addReadMeToFirstGroup: false, maxLevel: 0 });
 console.log(sidebar);
 module.exports = {
   dest: '../pages',
-  base: 'genauer',
+  base: 'genauer/pages',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
