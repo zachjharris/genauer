@@ -1,7 +1,7 @@
 const { description } = require('../../package');
 const getConfig = require('vuepress-bar');
 let { sidebar } = getConfig({ addReadMeToFirstGroup: false, maxLevel: 0 });
-console.log(sidebar);
+console.log(sidebar.filter((item) => item != ''));
 module.exports = {
   dest: '../pages',
   base: '/genauer/pages/',
@@ -42,7 +42,7 @@ module.exports = {
       //  link: '/songs/',
       //}
     ],
-    sidebar: sidebar,
+    sidebar: sidebar.filter((item) => item != ''),
   },
 
   /**
