@@ -1,0 +1,39 @@
+/**
+ * Custom Styles here.
+ *
+ * ref：https://v1.vuepress.vuejs.org/config/#index-styl
+ */
+
+.home .hero img
+  max-width 450px!important
+
+div[class*="language-"] {
+  background-color:transparent;
+}
+div[class*="language-"] pre, div[class*="language-"] pre[class*="language-"] {
+  margin-top:0;
+  padding:0;
+  margin-left:0!important;
+  margin-right:0!important;
+}
+.theme-default-content pre code, .theme-default-content pre[class*="language-"] code {
+  color: #476582;
+}
+span.chord {
+ position:relative;
+}
+span.chord:after {
+  content:attr(data-chord);
+  position:absolute;
+  top:-20px;
+  left:0;
+  font-family:source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  color:#476582;
+  font-size:0.85em;
+}
+@media screen and (max-width:419px) {
+  .theme-default-content div[class*="language-"] {
+    margin: 0.85rem 0rem;
+    border-radius: 0;
+  }
+}

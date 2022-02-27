@@ -1,0 +1,22 @@
+{
+  "name": "genauer",
+  "version": "0.0.1",
+  "description": "Reid Genauer Chords",
+  "main": "index.js",
+  "authors": {
+    "name": "Zach Harris",
+    "email": "zachjharris@gmail.com"
+  },
+  "repository": "/genauer",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "vuepress-bar": "^0.4.4"
+  }
+}
