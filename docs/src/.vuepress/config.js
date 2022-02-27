@@ -3,8 +3,8 @@ const getConfig = require('vuepress-bar');
 let { sidebar } = getConfig({ addReadMeToFirstGroup: false, maxLevel: 0 });
 console.log(sidebar.filter((item) => item != ''));
 module.exports = {
-  //dest: '../pages',
-  base: '/genauer',
+  dest: '../public',
+  base: '/genauer/public',
   //base: '/genauer/pages/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
